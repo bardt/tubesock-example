@@ -8,7 +8,7 @@ class ChatController < ApplicationController
       end
 
       tubesock.onmessage do |data|
-        tubesock.send_data message: "You said: #{data[:message]}"
+        tubesock.send_data message: "You said: #{data}"
       end
     end
   end
